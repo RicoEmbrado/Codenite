@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegradient"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/populationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:drawableLeft="@drawable/ic_baseline_people_alt_24"
+        android:text=" 100"
+        android:textColor="#FCE303"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/eventtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Where will you be landing?"
+        android:textColor="#FCE303"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace"
+        android:layout_below="@id/populationtext"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/deathtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FCE303"
+        android:textSize="17dp"
+        android:typeface="monospace"
+        android:layout_below="@id/eventtext"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice1a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Tilted Towers"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice1b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Pleasant Park"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice2a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Run for the chest"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice2b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Ignore it"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice3a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Run for shelter"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice3b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Loot the nearest shop"
+        android:textSize="16dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice4a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Search downstairs"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice4b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Search upstairs"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice5a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Run out the building"
+        android:textSize="18dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice5b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Glide out the window"
+        android:textSize="19dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choicedeath"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:layout_centerHorizontal="true"
+        android:text="accept defeat"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choicevictory"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:layout_centerHorizontal="true"
+        android:text="accept your victory"
+        android:textSize="18dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice6a"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Wait for the player to get closer"
+        android:textSize="15dp"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choice6b"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/deathtext"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fce303"
+        android:text="Charge out and shoot"
+        android:textSize="19dp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/healthamounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:drawableLeft="@drawable/ic_baseline_heart_broken_24"
+        android:gravity="center"
+        android:text=" 100"
+        android:textColor="#FC0303"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/shieldamounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:drawableLeft="@drawable/ic_baseline_shield_24"
+        android:gravity="center"
+        android:text=" 0"
+        android:textColor="#0307FC"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

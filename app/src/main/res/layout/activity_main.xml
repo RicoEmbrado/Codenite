@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueswirl"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/codenitetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:textColor="#fce303"
+        android:text="CODENITE"
+        android:textSize="50dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/instructionstext"
+        android:layout_width="261dp"
+        android:layout_height="193dp"
+        android:layout_below="@id/codenitetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="Input your username and click SET to lock in your name, then click START to begin!"
+        android:textColor="#fce303"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startbutton"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#fce303"
+        android:text="START"
+        android:textSize="25dp"
+        android:layout_below="@id/usernametext"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/usernametext"
+        android:layout_width="280dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/instructionstext"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="#757575"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+</RelativeLayout>

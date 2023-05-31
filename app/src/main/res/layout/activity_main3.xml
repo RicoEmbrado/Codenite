@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueswirl"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/resulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FCE303"
+        android:textSize="35dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/questiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resulttext"
+        android:gravity="center"
+        android:text="Rate how well you did:  1, 2, 3, 4, or 5?"
+        android:textColor="#FCE303"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/rateheretext"
+        android:layout_width="280dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/questiontext"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Rate Here"
+        android:textColor="#757575"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbutton"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#fce303"
+        android:text="submit"
+        android:textSize="25dp"
+        android:layout_below="@id/rateheretext"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/endresultrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/submitbutton"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FCE303"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
